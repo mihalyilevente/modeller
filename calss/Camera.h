@@ -9,6 +9,7 @@ const float SPEED = 2.5f;
 const float SENSITIVITY = 0.1f;
 const float YAW = -90.0f;
 const float PITCH = 0.0f;
+const float ZOOM = 45.0f;
 
 class Camera
 {
@@ -30,7 +31,10 @@ public:
 
     glm::mat4 getViewMatrix() const;
     float getFOV() const;
+    glm::vec3 getPosition() ;
     void ProcessKeyboard(Movement direction, float deltaTime);
+
+    void ProcessMouseMovement(float xoffset, float yoffset, GLboolean constrainPitch = true );
 
 private:
     glm::vec3 Position;

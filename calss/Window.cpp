@@ -1,6 +1,8 @@
 #include "Window.h"
 
 Window::Window(int width, int height, const char* title) {
+    this->height = height;
+    this->width = width;
     if (!glfwInit()) {
         // Initialization failed
         exit(EXIT_FAILURE);
@@ -35,4 +37,12 @@ Window::~Window() {
 
 GLFWwindow *Window::getWindow() {
     return window;
+}
+
+int Window::getWidth() {
+    return width;
+}
+
+int Window::getHeight() {
+    return height;
 }

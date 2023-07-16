@@ -13,8 +13,14 @@ public:
 
     GLFWwindow *getWindow();
 
+    int getWidth();
+
+    int getHeight();
+
 private:
     GLFWwindow* window;
+    int width;
+    int height;
 };
 
 #endif  // WINDOW_H
