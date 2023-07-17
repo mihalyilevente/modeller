@@ -87,8 +87,24 @@ void Camera::ProcessMouseMovement(float xoffset, float yoffset, GLboolean constr
             Pitch = -89.0f;
     }
 
+// Wrap the Yaw value within the range of -180 to 180 degrees
+    if (Yaw > 180.0f) {
+        Yaw -= 360.0f;
+    } else if (Yaw < -180.0f) {
+        Yaw += 360.0f;
+    }
+
     // Update Front, Right and Up Vectors using the updated Euler angles
     updateCameraVectors();
 }
+
+float Camera::getYaw() {
+    return Yaw;
+}
+
+float Camera::getPitch() {
+    return Pitch;
+}
+
 
 

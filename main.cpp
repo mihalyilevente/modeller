@@ -56,9 +56,17 @@ float cube[] = {
         -0.5f,  0.5f, -0.5f
 };
 
+int windowWidth = 1920;
+int windowHeight = 1080;
+
 // global variables for timing to calculate deltaTime
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
+double lastX = windowWidth/2; // Initially set to half your window's width
+double lastY = windowHeight/2; // Initially set to half your window's height
+bool firstMouse = true;
+bool leftMouseButtonPressed = false;
+float cameraSensitivity = 1.5f; // adjust this value to your liking
 
 // global variable for the camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.02f);
@@ -66,35 +74,27 @@ Camera camera(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.02f);
 // Callback for keyboard input
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    std::cout << "key_callback was called\n";
-
     if (action == GLFW_PRESS || action == GLFW_REPEAT)
     {
         switch (key)
         {
             case GLFW_KEY_W:
                 camera.ProcessKeyboard(Camera::FORWARD, deltaTime);
-                std::cout << "GLFW_KEY_W key was pressed\n";
                 break;
             case GLFW_KEY_S:
                 camera.ProcessKeyboard(Camera::BACKWARD, deltaTime);
-                std::cout << "GLFW_KEY_S key was pressed\n";
                 break;
             case GLFW_KEY_A:
                 camera.ProcessKeyboard(Camera::LEFT, deltaTime);
-                std::cout << "GLFW_KEY_A key was pressed\n";
                 break;
             case GLFW_KEY_D:
                 camera.ProcessKeyboard(Camera::RIGHT, deltaTime);
-                std::cout << "GLFW_KEY_D key was pressed\n";
                 break;
             case GLFW_KEY_SPACE:
                 camera.ProcessKeyboard(Camera::UP, deltaTime);
-                std::cout << "GLFW_KEY_SPACE key was pressed\n";
                 break;
             case GLFW_KEY_LEFT_SHIFT:
                 camera.ProcessKeyboard(Camera::DOWN, deltaTime);
-                std::cout << "GLFW_KEY_LEFT_SHIFT key was pressed\n";
                 break;
             default:
                 break;
@@ -102,30 +102,43 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     }
 }
 
-bool firstMouse = true;
-float lastX = 0;
-float lastY = 0;
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+        leftMouseButtonPressed = true;
+    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
+        leftMouseButtonPressed = false;
+}
 
 
-void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
-    if (firstMouse) {
+static void mouse_callback(GLFWwindow* window, double xpos, double ypos)
+{
+    if (firstMouse) // this bool variable is initially set to true
+    {
         lastX = xpos;
         lastY = ypos;
         firstMouse = false;
     }
 
-    float xoffset = xpos - lastX;
-    float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+    double xoffset = xpos - lastX;
+    double yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
 
     lastX = xpos;
     lastY = ypos;
 
-    camera.ProcessMouseMovement(xoffset, yoffset);
+    xoffset *= cameraSensitivity;
+    yoffset *= cameraSensitivity;
+
+    if (leftMouseButtonPressed)
+    {
+        camera.ProcessMouseMovement(xoffset, yoffset);
+    }
 }
+
 
 int main() {
     try {
-        Window window(640, 480, "Hello World");
+        Window window(windowWidth, windowHeight, "Hello World");
 
         if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
             return -1;
@@ -135,8 +148,8 @@ int main() {
 
         // Set the key callback function
         glfwSetKeyCallback(window.getWindow(), key_callback);
+        glfwSetMouseButtonCallback(window.getWindow(), mouse_button_callback);
         glfwSetCursorPosCallback(window.getWindow(), mouse_callback);
-        glfwSetInputMode(window.getWindow(), GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
         Buffer buffer(cube, sizeof(cube));
         Shader shader("/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl",
@@ -165,6 +178,12 @@ int main() {
             std::cout << "\n";
             std::cout << "camera.getFov: ";
             std::cout << camera.getFOV();
+            std::cout << "\n";
+            std::cout << "camera.getYaw: ";
+            std::cout << camera.getYaw();
+            std::cout << "\n";
+            std::cout << "camera.getPitch: ";
+            std::cout << camera.getPitch();
             std::cout << "\n";
             std::cout << "camera.getPosition: ";
             std::cout << camera.getPosition()[0];

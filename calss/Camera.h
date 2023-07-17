@@ -5,7 +5,7 @@
 #include <GLFW/glfw3.h>
 
 // Default camera values
-const float SPEED = 2.5f;
+const float SPEED = 15.0f;
 const float SENSITIVITY = 0.1f;
 const float YAW = -90.0f;
 const float PITCH = 0.0f;
@@ -35,6 +35,8 @@ public:
     void ProcessKeyboard(Movement direction, float deltaTime);
 
     void ProcessMouseMovement(float xoffset, float yoffset, GLboolean constrainPitch = true );
+    float getYaw();
+    float getPitch();
 
 private:
     glm::vec3 Position;
