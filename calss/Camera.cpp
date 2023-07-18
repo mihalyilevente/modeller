@@ -41,7 +41,7 @@ void Camera::ProcessKeyboard(Movement direction, float deltaTime)
         Position -= WorldUp * velocity;
 }
 
-// Calculates the front vector from the Camera's (updated) Euler Angles
+// Calculates the front vector from the camera's (updated) Euler Angles
 void Camera::updateCameraVectors()
 {
 

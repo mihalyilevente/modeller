@@ -91,6 +91,20 @@ build CMakeFiles/modeller.dir/calss/Camera.cpp.o: CXX_COMPILER__modeller_Debug /
   OBJECT_DIR = CMakeFiles/modeller.dir
   OBJECT_FILE_DIR = CMakeFiles/modeller.dir/calss
 
+build CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o: CXX_COMPILER__modeller_Debug /home/levi/CLionProjects/modeller/calss/ObjLoader.cpp || cmake_object_order_depends_target_modeller
+  DEP_FILE = CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM
+  OBJECT_DIR = CMakeFiles/modeller.dir
+  OBJECT_FILE_DIR = CMakeFiles/modeller.dir/calss
+
+build CMakeFiles/modeller.dir/calss/InputHandler.cpp.o: CXX_COMPILER__modeller_Debug /home/levi/CLionProjects/modeller/calss/InputHandler.cpp || cmake_object_order_depends_target_modeller
+  DEP_FILE = CMakeFiles/modeller.dir/calss/InputHandler.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM
+  OBJECT_DIR = CMakeFiles/modeller.dir
+  OBJECT_FILE_DIR = CMakeFiles/modeller.dir/calss
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target modeller
@@ -99,7 +113,7 @@ build CMakeFiles/modeller.dir/calss/Camera.cpp.o: CXX_COMPILER__modeller_Debug /
 #############################################
 # Link the executable modeller
 
-build modeller: CXX_EXECUTABLE_LINKER__modeller_Debug CMakeFiles/modeller.dir/main.cpp.o CMakeFiles/modeller.dir/external/GLAD/src/glad.c.o CMakeFiles/modeller.dir/calss/Window.cpp.o CMakeFiles/modeller.dir/calss/Buffer.cpp.o CMakeFiles/modeller.dir/calss/Shader.cpp.o CMakeFiles/modeller.dir/calss/Camera.cpp.o
+build modeller: CXX_EXECUTABLE_LINKER__modeller_Debug CMakeFiles/modeller.dir/main.cpp.o CMakeFiles/modeller.dir/external/GLAD/src/glad.c.o CMakeFiles/modeller.dir/calss/Window.cpp.o CMakeFiles/modeller.dir/calss/Buffer.cpp.o CMakeFiles/modeller.dir/calss/Shader.cpp.o CMakeFiles/modeller.dir/calss/Camera.cpp.o CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o CMakeFiles/modeller.dir/calss/InputHandler.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -lglfw
   OBJECT_DIR = CMakeFiles/modeller.dir

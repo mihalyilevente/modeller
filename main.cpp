@@ -5,6 +5,8 @@
 #include "calss/Shader.h"
 #include "calss/Camera.h"
 #include "ext/matrix_clip_space.hpp"
+#include "calss/ObjLoader.h"
+#include "calss/InputHandler.h"
 
 float triangle[] = {
         -0.5f, -0.5f, 0.0f,
@@ -62,84 +64,37 @@ int windowHeight = 1080;
 // global variables for timing to calculate deltaTime
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
-double lastX = windowWidth/2; // Initially set to half your window's width
-double lastY = windowHeight/2; // Initially set to half your window's height
-bool firstMouse = true;
-bool leftMouseButtonPressed = false;
-float cameraSensitivity = 1.5f; // adjust this value to your liking
-
 // global variable for the camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f), glm::vec3(0.0f, 1.0f, 0.0f), 0.02f);
+InputHandler inputHandler(&camera, 1.5f);
 
 // Callback for keyboard input
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    if (action == GLFW_PRESS || action == GLFW_REPEAT)
-    {
-        switch (key)
-        {
-            case GLFW_KEY_W:
-                camera.ProcessKeyboard(Camera::FORWARD, deltaTime);
-                break;
-            case GLFW_KEY_S:
-                camera.ProcessKeyboard(Camera::BACKWARD, deltaTime);
-                break;
-            case GLFW_KEY_A:
-                camera.ProcessKeyboard(Camera::LEFT, deltaTime);
-                break;
-            case GLFW_KEY_D:
-                camera.ProcessKeyboard(Camera::RIGHT, deltaTime);
-                break;
-            case GLFW_KEY_SPACE:
-                camera.ProcessKeyboard(Camera::UP, deltaTime);
-                break;
-            case GLFW_KEY_LEFT_SHIFT:
-                camera.ProcessKeyboard(Camera::DOWN, deltaTime);
-                break;
-            default:
-                break;
-        }
-    }
+    inputHandler.key_callback(window,key,scancode,action,mods,deltaTime);
 }
 
 void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
 {
-    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
-        leftMouseButtonPressed = true;
-    if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
-        leftMouseButtonPressed = false;
+    inputHandler.mouse_button_callback(window,button,action,mods);
 }
-
 
 static void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 {
-    if (firstMouse) // this bool variable is initially set to true
-    {
-        lastX = xpos;
-        lastY = ypos;
-        firstMouse = false;
-    }
-
-    double xoffset = xpos - lastX;
-    double yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
-
-    lastX = xpos;
-    lastY = ypos;
-
-    xoffset *= cameraSensitivity;
-    yoffset *= cameraSensitivity;
-
-    if (leftMouseButtonPressed)
-    {
-        camera.ProcessMouseMovement(xoffset, yoffset);
-    }
+   inputHandler.mouse_callback(window,xpos, ypos);
 }
 
 
 int main() {
     try {
+        ObjLoader objLoader;
+        std::vector<glm::vec3> vertices;
+        std::vector<glm::ivec3> faces;
+        objLoader.loadObj("/home/levi/CLionProjects/modeller/objects/cube.obj", vertices, faces);
+        Buffer buffer(vertices, faces);
+        Shader shader("/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl",
+                      "/home/levi/CLionProjects/modeller/shaders/fragment_shader.glsl");
         Window window(windowWidth, windowHeight, "Hello World");
-
         if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
             return -1;
         }
@@ -151,9 +106,7 @@ int main() {
         glfwSetMouseButtonCallback(window.getWindow(), mouse_button_callback);
         glfwSetCursorPosCallback(window.getWindow(), mouse_callback);
 
-        Buffer buffer(cube, sizeof(cube));
-        Shader shader("/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl",
-                      "/home/levi/CLionProjects/modeller/shaders/fragment_shader.glsl");
+
 
         while (!window.shouldClose()) {
             float currentFrame = glfwGetTime();
@@ -196,10 +149,9 @@ int main() {
             shader.setMat4("projection", projection);
 
             buffer.bind();
-
             // Draw the triangles
-            glDrawArrays(GL_TRIANGLES, 0, 36);
-
+            glDrawElements(GL_TRIANGLES, faces.size() * 3, GL_UNSIGNED_INT, 0);
+            buffer.unbind();
             window.swapBuffers();
         }
     }catch (const std::exception& e) {
