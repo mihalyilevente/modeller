@@ -28,9 +28,9 @@ void ObjLoader::loadObj(const std::string &path, std::vector<glm::vec3> &out_ver
         else if (line.substr(0, 2) == "f ") {
             std::istringstream s(line.substr(2));
             glm::ivec3 f;
-            s >> f.x;
-            s >> f.y;
-            s >> f.z;
+            s >> f.x; f.x--;
+            s >> f.y; f.y--;
+            s >> f.z; f.z--;
             out_faces.push_back(f);
         }
         else {

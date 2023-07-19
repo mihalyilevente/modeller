@@ -8,56 +8,6 @@
 #include "calss/ObjLoader.h"
 #include "calss/InputHandler.h"
 
-float triangle[] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f,  0.5f, 0.0f
-};
-
-float cube[] = {
-        -0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f, -0.5f,
-        0.5f,  0.5f, -0.5f,
-        0.5f,  0.5f, -0.5f,
-        -0.5f,  0.5f, -0.5f,
-        -0.5f, -0.5f, -0.5f,
-
-        -0.5f, -0.5f,  0.5f,
-        0.5f, -0.5f,  0.5f,
-        0.5f,  0.5f,  0.5f,
-        0.5f,  0.5f,  0.5f,
-        -0.5f,  0.5f,  0.5f,
-        -0.5f, -0.5f,  0.5f,
-
-        -0.5f,  0.5f,  0.5f,
-        -0.5f,  0.5f, -0.5f,
-        -0.5f, -0.5f, -0.5f,
-        -0.5f, -0.5f, -0.5f,
-        -0.5f, -0.5f,  0.5f,
-        -0.5f,  0.5f,  0.5f,
-
-        0.5f,  0.5f,  0.5f,
-        0.5f,  0.5f, -0.5f,
-        0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f,  0.5f,
-        0.5f,  0.5f,  0.5f,
-
-        -0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f, -0.5f,
-        0.5f, -0.5f,  0.5f,
-        0.5f, -0.5f,  0.5f,
-        -0.5f, -0.5f,  0.5f,
-        -0.5f, -0.5f, -0.5f,
-
-        -0.5f,  0.5f, -0.5f,
-        0.5f,  0.5f, -0.5f,
-        0.5f,  0.5f,  0.5f,
-        0.5f,  0.5f,  0.5f,
-        -0.5f,  0.5f,  0.5f,
-        -0.5f,  0.5f, -0.5f
-};
-
 int windowWidth = 1920;
 int windowHeight = 1080;
 
@@ -91,13 +41,13 @@ int main() {
         std::vector<glm::vec3> vertices;
         std::vector<glm::ivec3> faces;
         objLoader.loadObj("/home/levi/CLionProjects/modeller/objects/cube.obj", vertices, faces);
-        Buffer buffer(vertices, faces);
-        Shader shader("/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl",
-                      "/home/levi/CLionProjects/modeller/shaders/fragment_shader.glsl");
         Window window(windowWidth, windowHeight, "Hello World");
         if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
             return -1;
         }
+        Buffer buffer(vertices, faces);
+        Shader shader("/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl",
+                      "/home/levi/CLionProjects/modeller/shaders/fragment_shader.glsl");
         // Set the window's user pointer to the camera object
         glfwSetWindowUserPointer(window.getWindow(), &camera);
 
@@ -123,28 +73,6 @@ int main() {
             glm::mat4 view = camera.getViewMatrix();
             float aspectRatio = window.getWidth() / (float) window.getHeight();
             glm::mat4 projection = glm::perspective(glm::radians(camera.getFOV()), aspectRatio, 0.1f, 100.0f);
-            std::cout << "view: ";
-            std::cout << view.length();
-            std::cout << "\n";
-            std::cout << "projection: ";
-            std::cout << projection.length();
-            std::cout << "\n";
-            std::cout << "camera.getFov: ";
-            std::cout << camera.getFOV();
-            std::cout << "\n";
-            std::cout << "camera.getYaw: ";
-            std::cout << camera.getYaw();
-            std::cout << "\n";
-            std::cout << "camera.getPitch: ";
-            std::cout << camera.getPitch();
-            std::cout << "\n";
-            std::cout << "camera.getPosition: ";
-            std::cout << camera.getPosition()[0];
-            std::cout << ",";
-            std::cout << camera.getPosition()[1];
-            std::cout << ",";
-            std::cout << camera.getPosition()[2];
-            std::cout << "\n";
             shader.setMat4("view", view);
             shader.setMat4("projection", projection);
 
