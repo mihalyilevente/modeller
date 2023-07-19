@@ -39,8 +39,12 @@ int main() {
     try {
         ObjLoader objLoader;
         std::vector<glm::vec3> vertices;
+        std::vector<glm::vec2> texCoords;
+        std::vector<glm::vec3> normals;
         std::vector<glm::ivec3> faces;
-        objLoader.loadObj("/home/levi/CLionProjects/modeller/objects/cube.obj", vertices, faces);
+        std::vector<glm::ivec2> texIndices;
+        std::vector<glm::ivec3> normIndices;
+        objLoader.loadObj("/home/levi/CLionProjects/modeller/objects/Gear.obj", vertices, texCoords, normals, faces, texIndices,normIndices);
         Window window(windowWidth, windowHeight, "Hello World");
         if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
             return -1;
@@ -55,8 +59,6 @@ int main() {
         glfwSetKeyCallback(window.getWindow(), key_callback);
         glfwSetMouseButtonCallback(window.getWindow(), mouse_button_callback);
         glfwSetCursorPosCallback(window.getWindow(), mouse_callback);
-
-
 
         while (!window.shouldClose()) {
             float currentFrame = glfwGetTime();
