@@ -105,6 +105,3 @@ float Camera::getYaw() {
 float Camera::getPitch() {
     return Pitch;
 }
-
-
-

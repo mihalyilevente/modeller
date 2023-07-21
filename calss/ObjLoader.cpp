@@ -8,7 +8,7 @@ void ObjLoader::loadObj(const std::string& path,
                         std::vector<glm::vec2>& out_texCoords,
                         std::vector<glm::vec3>& out_normals,
                         std::vector<glm::ivec3>& out_faces,
-                        std::vector<glm::ivec2>& out_texIndices,
+                        std::vector<glm::ivec3>& out_texIndices,
                         std::vector<glm::ivec3>& out_normIndices) {
     std::ifstream in(path, std::ios::in);
     if (!in) {
@@ -22,7 +22,7 @@ void ObjLoader::loadObj(const std::string& path,
             continue;
         }
         else if (line.substr(0, 2) == "v ") {
-            parseVec3(line.substr(3), out_vertices);
+            parseVec3(line.substr(2), out_vertices);
         }
         else if (line.substr(0, 3) == "vt ") {
             parseVec2(line.substr(3), out_texCoords);
@@ -58,31 +58,40 @@ void ObjLoader::parseVec3(const std::string& line, std::vector<glm::vec3>& out_v
 }
 
 void ObjLoader::parseFace(const std::string& line,
-               std::vector<glm::ivec3>& out_faces,
-               std::vector<glm::ivec3>& out_normIndices,
-               std::vector<glm::ivec2>& out_texIndices)
+                          std::vector<glm::ivec3>& out_faces,
+                          std::vector<glm::ivec3>& out_normIndices,
+                          std::vector<glm::ivec3>& out_texIndices)
 {
     std::istringstream s(line);
     std::string token;
-    glm::ivec3 f;
-    glm::ivec3 ft;
-    glm::ivec3 fn;
-    for (int i = 0; i < 3; i++) {
-        if (!(std::getline(s, token, '/') && !token.empty())) {
-            continue;
+    glm::ivec3 f(-1, -1, -1);
+    glm::ivec3 fn(-1, -1, -1);
+    glm::ivec3 ft(-1, -1, -1);
+    std::string vtnSets[3];
+
+    for (int i = 0; i < 3; ++i) {
+        std::getline(s, vtnSets[i], ' ');
+
+        std::vector<std::string> indexStrings;
+        std::istringstream indexStream(vtnSets[i]);
+        std::string index;
+
+        while (std::getline(indexStream, index, '/')) {
+            indexStrings.push_back(index);
         }
-        f[i] = std::stoi(token) - 1;
-        if (std::getline(s, token, '/') && !token.empty()) {
-            ft[i] = std::stoi(token) - 1;
+
+        if (!indexStrings[0].empty()) {
+            f[i] = std::stoi(indexStrings[0]) - 1;
         }
-        if (std::getline(s, token, ' ') && !token.empty()) {
-            fn[i] = std::stoi(token) - 1;
+        if (indexStrings.size() > 1 && !indexStrings[1].empty()) {
+            ft[i] = std::stoi(indexStrings[1]) - 1;
+        }
+        if (indexStrings.size() > 2 && !indexStrings[2].empty()) {
+            fn[i] = std::stoi(indexStrings[2]) - 1;
         }
     }
+
     out_faces.push_back(f);
-    out_texIndices.push_back(glm::ivec2(ft.x, ft.y));
+    out_texIndices.push_back(ft);
     out_normIndices.push_back(fn);
 }
-
-
-

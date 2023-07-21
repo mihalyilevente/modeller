@@ -15,7 +15,16 @@ public:
     void use();
     void setMat4(const std::string &name, const glm::mat4 &mat);
 private:
-    bool checkCompileErrors(unsigned int shader, std::string type);
+
+    void setVec3(const std::string &name, const glm::vec3 &vec);
+
+    void setFloat(const std::string &name, float value);
+
+    std::string loadShaderCode(const char *shaderPath);
+
+    unsigned int compileShader(GLenum type, const char *shaderCode, const std::string &typeName);
+
+    void checkCompileErrors(unsigned int shader, const std::string &type);
 };
 
 #endif

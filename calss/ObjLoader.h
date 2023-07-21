@@ -19,11 +19,11 @@ public:
 
     void
     parseFace(const std::string &line, std::vector<glm::ivec3> &out_faces, std::vector<glm::ivec3> &out_normIndices,
-              std::vector<glm::ivec2> &out_texIndices);
+              std::vector<glm::ivec3> &out_texIndices);
 
     void loadObj(const std::string &path, std::vector<glm::vec3> &out_vertices, std::vector<glm::vec2> &out_texCoords,
                  std::vector<glm::vec3> &out_normals, std::vector<glm::ivec3> &out_faces,
-                 std::vector<glm::ivec2> &out_texIndices, std::vector<glm::ivec3> &out_normIndices);
+                 std::vector<glm::ivec3> &out_texIndices, std::vector<glm::ivec3> &out_normIndices);
 };
 
 

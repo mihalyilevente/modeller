@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="modeller"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="modeller">
+				<Option output="/home/levi/CLionProjects/modeller/cmake-build-debug/modeller" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 modeller"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="modeller/fast">
+				<Option output="/home/levi/CLionProjects/modeller/cmake-build-debug/modeller" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 modeller/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Buffer.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Buffer.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Camera.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Camera.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/InputHandler.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/InputHandler.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/ObjLoader.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/ObjLoader.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Shader.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Shader.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Texture.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Texture.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Window.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Window.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/GLAD/src/glad.c">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/STB/stb_image.h">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/main.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
