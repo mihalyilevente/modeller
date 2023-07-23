@@ -1,5 +1,4 @@
 #include "Camera.h"
-#include "ext/matrix_transform.hpp"
 
 // Constructor
 Camera::Camera(glm::vec3 position, glm::vec3 up, float yaw, float pitch)

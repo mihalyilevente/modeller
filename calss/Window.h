@@ -1,9 +1,7 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <GLFW/glfw3.h>
-#include <cstdlib>
-
+#include "lib.h"
 class Window {
 public:
     Window(int width, int height, const char* title);

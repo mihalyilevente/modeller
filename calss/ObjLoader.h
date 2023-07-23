@@ -7,8 +7,7 @@
 
 #include <fstream>
 #include <sstream>
-#include <vector>
-#include "../external/GLM/glm.hpp"
+#include "lib.h"
 
 class ObjLoader {
 public:

@@ -1,12 +1,8 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include <glad/glad.h>
-#include "ext/matrix_float4x4.hpp"
+
+#include "lib.h"
 
 class Shader {
 public:

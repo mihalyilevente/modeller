@@ -134,6 +134,9 @@
 		<Unit filename="/home/levi/CLionProjects/modeller/calss/Window.h">
 			<Option target="modeller"/>
 		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/lib.h">
+			<Option target="modeller"/>
+		</Unit>
 		<Unit filename="/home/levi/CLionProjects/modeller/external/GLAD/src/glad.c">
 			<Option target="modeller"/>
 		</Unit>

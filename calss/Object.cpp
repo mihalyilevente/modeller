@@ -27,3 +27,11 @@ Texture *Object::getTexture() {
 void Object::draw() {
     glDrawElements(GL_TRIANGLES, faces.size() * 3, GL_UNSIGNED_INT, 0);
 }
+
+void Object::moveVertically(int n) { //does not work
+    for (int i = 0; i < vertices.size(); i++) {
+		vertices[i].x += n;
+		vertices[i].y += n;
+		vertices[i].z += n;
+    }
+}

@@ -1,15 +1,8 @@
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "external/GLAD/include/glad/glad.h"
-#include "GLFW/glfw3.h"
 #include "calss/Window.h"
-#include "calss/Buffer.h"
-#include "calss/Shader.h"
 #include "calss/Camera.h"
-#include "ext/matrix_clip_space.hpp"
-#include "calss/ObjLoader.h"
 #include "calss/InputHandler.h"
-#include "calss/Texture.h"
 #include "calss/Object.h"
 
 int windowWidth = 1920;
@@ -50,6 +43,7 @@ int main() {
             return -1;
         }
         Object object(objFilePath, vertexShaderPath, fragmentShaderPath, texturePath);
+        inputHandler.setObjectInFocus(&object);
         //glEnable(GL_DEPTH_TEST); // Enable depth testing
         //glEnable(GL_CULL_FACE);  // Enable backface culling
         //glCullFace(GL_FRONT);

@@ -1,5 +1,4 @@
 #include "Shader.h"
-#include "gtc/type_ptr.hpp"
 
 Shader::Shader(const std::string vertexPath, const std::string  fragmentPath) {
     // 1. Retrieve the vertex/fragment source code from filePath

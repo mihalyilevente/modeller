@@ -2,7 +2,7 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /home/levi/CLionProjects/modeller/calss/Object.cpp \
  /usr/include/stdc-predef.h \
  /home/levi/CLionProjects/modeller/calss/Object.h \
- /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_algobase.h \
+ /home/levi/CLionProjects/modeller/calss/lib.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,6 +13,10 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+ /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
  /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -27,76 +31,14 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/c++/11/bits/stl_iterator.h \
  /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
- /usr/include/c++/11/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
- /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
- /usr/include/c++/11/bits/exception.h \
- /usr/include/c++/11/bits/memoryfwd.h \
- /usr/include/c++/11/bits/stl_construct.h \
- /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/ext/alloc_traits.h \
- /usr/include/c++/11/bits/alloc_traits.h \
- /usr/include/c++/11/bits/stl_vector.h \
- /usr/include/c++/11/initializer_list \
- /usr/include/c++/11/bits/stl_bvector.h \
- /usr/include/c++/11/bits/functional_hash.h \
- /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/vector.tcc \
- /home/levi/CLionProjects/modeller/external/GLM/vec2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/qualifier.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/setup.hpp \
- /usr/include/c++/11/cassert /usr/include/assert.h \
- /usr/include/c++/11/cstddef \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/../simd/platform.h \
- /usr/include/c++/11/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec2.inl \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/./compute_vector_relational.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/./setup.hpp \
- /usr/include/c++/11/limits \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int2_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/scalar_int_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint2_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/scalar_uint_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/vec3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec3.inl \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int3_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint3_sized.hpp \
- /home/levi/CLionProjects/modeller/calss/Shader.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
- /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -104,6 +46,17 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/c++/11/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
@@ -115,6 +68,8 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/c++/11/bits/cxxabi_forced.h \
  /usr/include/c++/11/bits/stl_function.h \
  /usr/include/c++/11/backward/binders.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/initializer_list \
  /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
@@ -145,6 +100,9 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_construct.h \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -167,6 +125,8 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc /usr/include/c++/11/fstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
@@ -193,93 +153,60 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
  /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/iostream \
- /home/levi/CLionProjects/modeller/external/GLAD/include/glad/glad.h \
- /home/levi/CLionProjects/modeller/external/GLAD/include/KHR/khrplatform.h \
- /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_float4x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/type_mat4x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/type_vec4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/type_vec4.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/type_mat4x4.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../matrix.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../vec4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_bool4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_bool4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_float4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_float4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_double4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_double4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_int4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_int4_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_uint4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/vector_uint4_sized.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat2x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x2.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat2x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x3.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat2x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat2x4.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double2x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float2x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat3x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x2.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat3x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x3.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat3x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat3x4.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double3x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float3x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat4x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat4x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat4x2.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float4x2.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float4x2_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat4x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat4x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/../detail/type_mat4x3.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float4x3.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float4x3_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../mat4x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x4.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_double4x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/.././ext/matrix_float4x4_precision.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/func_matrix.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../geometric.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/func_geometric.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../exponential.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/type_vec1.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/type_vec1.inl \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/levi/CLionProjects/modeller/external/GLM/vec2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/qualifier.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/setup.hpp \
+ /usr/include/c++/11/cassert /usr/include/assert.h \
+ /usr/include/c++/11/cstddef \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/../simd/platform.h \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec2.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/./compute_vector_relational.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/./setup.hpp \
+ /usr/include/c++/11/limits \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int2_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/scalar_int_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint2_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../ext/scalar_uint_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/vec3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/../detail/type_vec3.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_bool3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_float3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_double3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_int3_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/./ext/vector_uint3_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_transform.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/scalar_constants.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/scalar_constants.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../geometric.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/func_geometric.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../exponential.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/type_vec1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/type_vec1.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/type_vec4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/type_vec4.inl \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -290,30 +217,146 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/func_exponential.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/../vector_relational.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/../detail/func_vector_relational.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/_vectorize.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../common.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/_fixes.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/func_common.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/compute_common.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/calss/Texture.h \
- /home/levi/CLionProjects/modeller/calss/../external/STB/stb_image.h \
- /usr/include/c++/11/stdlib.h /usr/include/GL/gl.h \
- /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_transform.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/scalar_constants.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/../detail/setup.hpp \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/../ext/scalar_constants.inl \
- /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/func_exponential.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../vector_relational.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/../detail/func_vector_relational.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/_vectorize.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../common.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/_fixes.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/func_common.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/compute_common.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/../detail/setup.hpp \
  /home/levi/CLionProjects/modeller/external/GLM/ext/../trigonometric.hpp \
  /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/setup.hpp \
  /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/func_trigonometric.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../matrix.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../vec4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_bool4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_bool4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_float4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_float4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_double4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_double4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_int4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_int4_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_uint4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/vector_uint4_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat2x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x2.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat2x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x3.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat2x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat2x4.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double2x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float2x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat3x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x2.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat3x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x3.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat3x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat3x4.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double3x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float3x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat4x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x2.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x2.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x2_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat4x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x3.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x3.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x3_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../mat4x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/../detail/type_mat4x4.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_double4x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x4.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/.././ext/matrix_float4x4_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../detail/func_matrix.inl \
  /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_transform.inl \
- /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/../external/GLAD/include/glad/glad.h \
+ /home/levi/CLionProjects/modeller/external/GLAD/include/KHR/khrplatform.h \
+ /usr/include/GLFW/glfw3.h \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_clip_space.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_clip_space.inl \
+ /home/levi/CLionProjects/modeller/external/GLAD/include/glad/glad.h \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/type_ptr.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/quaternion.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../gtc/matrix_transform.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../gtc/../ext/matrix_projection.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../gtc/../ext/matrix_projection.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../gtc/matrix_transform.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_relational.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_relational.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/type_float.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_common.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../ext/quaternion_geometric.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../ext/quaternion_geometric.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_common.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_float.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/type_quat.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/../detail/type_quat.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_float_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_double.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_double_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_trigonometric.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_trigonometric.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_transform.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/quaternion_transform.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/quaternion.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/epsilon.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../detail/setup.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/epsilon.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/vec1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_bool1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_float1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_double1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_int1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_int1_sized.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_uint1.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/../gtc/../ext/vector_uint1_sized.hpp \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/levi/CLionProjects/modeller/external/GLM/gtc/type_ptr.inl \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/glm.hpp \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/detail/_fixes.hpp \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/detail/setup.hpp \
@@ -335,4 +378,10 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/detail/type_half.inl \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/integer.hpp \
  /home/levi/CLionProjects/modeller/calss/../external/GLM/detail/func_integer.inl \
- /home/levi/CLionProjects/modeller/calss/ObjLoader.h
+ /usr/include/GL/gl.h \
+ /home/levi/CLionProjects/modeller/calss/../external/STB/stb_image.h \
+ /usr/include/c++/11/stdlib.h \
+ /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/ObjLoader.h \
+ /home/levi/CLionProjects/modeller/calss/Shader.h \
+ /home/levi/CLionProjects/modeller/calss/Texture.h

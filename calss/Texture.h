@@ -1,11 +1,7 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-#include "../external/STB/stb_image.h"
-#include "glad/glad.h"
-#include <string>
-#include <iostream>
-#include <GL/gl.h>
+#include "lib.h"
 
 class Texture {
 public:

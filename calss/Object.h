@@ -6,18 +6,17 @@
 #define OBJECT_H
 
 
-#include <vector>
-#include "vec2.hpp"
-#include "vec3.hpp"
-#include "Shader.h"
-#include "Texture.h"
-#include "ext/matrix_transform.hpp"
+#include "lib.h"
 #include "Buffer.h"
 #include "ObjLoader.h"
+#include "Shader.h"
+#include "Texture.h"
 
 class Object {
 public:
     Object(const std::string& objFilePath, const std::string& vertexShaderPath, const std::string& fragmentShaderPath, const std::string& texturePath);
+
+    void moveVertically(int n);
 
 	Buffer* getBuffer();
     Shader* getShader();

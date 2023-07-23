@@ -1,8 +1,7 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
-#include "../external/GLM/glm.hpp"
-#include <GLFW/glfw3.h>
+#include "lib.h"
 
 // Default camera values
 const float SPEED = 15.0f;

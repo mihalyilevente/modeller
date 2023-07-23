@@ -3,7 +3,6 @@
 //
 
 #include "InputHandler.h"
-#include "Camera.h"
 
 InputHandler::InputHandler(Camera* camerap, float cameraSensitivityp) {
 	camera = camerap;
@@ -33,6 +32,9 @@ void InputHandler::key_callback(GLFWwindow* window, int key, int scancode, int a
                 break;
             case GLFW_KEY_LEFT_SHIFT:
                 camera->ProcessKeyboard(Camera::DOWN, deltaTime);
+                break;
+            case GLFW_KEY_J:
+                objectInFocus->moveVertically(1);
                 break;
             default:
                 break;
@@ -70,4 +72,8 @@ void InputHandler::mouse_callback(GLFWwindow* window, double xpos, double ypos)
     {
         camera->ProcessMouseMovement(xoffset, yoffset);
     }
+}
+
+void InputHandler::setObjectInFocus(Object* object) {
+	objectInFocus = object;
 }
