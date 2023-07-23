@@ -225,6 +225,30 @@ calss/ObjLoader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/modeller.dir/build.make CMakeFiles/modeller.dir/calss/ObjLoader.cpp.s
 .PHONY : calss/ObjLoader.cpp.s
 
+calss/Object.o: calss/Object.cpp.o
+.PHONY : calss/Object.o
+
+# target to build an object file
+calss/Object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modeller.dir/build.make CMakeFiles/modeller.dir/calss/Object.cpp.o
+.PHONY : calss/Object.cpp.o
+
+calss/Object.i: calss/Object.cpp.i
+.PHONY : calss/Object.i
+
+# target to preprocess a source file
+calss/Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modeller.dir/build.make CMakeFiles/modeller.dir/calss/Object.cpp.i
+.PHONY : calss/Object.cpp.i
+
+calss/Object.s: calss/Object.cpp.s
+.PHONY : calss/Object.s
+
+# target to generate assembly for a file
+calss/Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/modeller.dir/build.make CMakeFiles/modeller.dir/calss/Object.cpp.s
+.PHONY : calss/Object.cpp.s
+
 calss/Shader.o: calss/Shader.cpp.o
 .PHONY : calss/Shader.o
 
@@ -366,6 +390,9 @@ help:
 	@echo "... calss/ObjLoader.o"
 	@echo "... calss/ObjLoader.i"
 	@echo "... calss/ObjLoader.s"
+	@echo "... calss/Object.o"
+	@echo "... calss/Object.i"
+	@echo "... calss/Object.s"
 	@echo "... calss/Shader.o"
 	@echo "... calss/Shader.i"
 	@echo "... calss/Shader.s"

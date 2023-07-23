@@ -110,6 +110,12 @@
 		<Unit filename="/home/levi/CLionProjects/modeller/calss/ObjLoader.h">
 			<Option target="modeller"/>
 		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Object.cpp">
+			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/calss/Object.h">
+			<Option target="modeller"/>
+		</Unit>
 		<Unit filename="/home/levi/CLionProjects/modeller/calss/Shader.cpp">
 			<Option target="modeller"/>
 		</Unit>

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/modeller.dir/calss/InputHandler.cpp.o.d"
   "CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o"
   "CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o.d"
+  "CMakeFiles/modeller.dir/calss/Object.cpp.o"
+  "CMakeFiles/modeller.dir/calss/Object.cpp.o.d"
   "CMakeFiles/modeller.dir/calss/Shader.cpp.o"
   "CMakeFiles/modeller.dir/calss/Shader.cpp.o.d"
   "CMakeFiles/modeller.dir/calss/Texture.cpp.o"

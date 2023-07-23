@@ -341,4 +341,12 @@ CMakeFiles/modeller.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /usr/include/GL/gl.h
+ /usr/include/GL/gl.h /home/levi/CLionProjects/modeller/calss/Object.h \
+ /home/levi/CLionProjects/modeller/calss/Shader.h \
+ /home/levi/CLionProjects/modeller/calss/Texture.h \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_transform.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.hpp \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/../gtc/constants.inl \
+ /home/levi/CLionProjects/modeller/external/GLM/ext/matrix_transform.inl \
+ /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/ObjLoader.h

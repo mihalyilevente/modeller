@@ -1,10 +1,10 @@
 #include "Shader.h"
 #include "gtc/type_ptr.hpp"
 
-Shader::Shader(const char* vertexPath, const char* fragmentPath) {
+Shader::Shader(const std::string vertexPath, const std::string  fragmentPath) {
     // 1. Retrieve the vertex/fragment source code from filePath
-    std::string vertexCode = loadShaderCode(vertexPath);
-    std::string fragmentCode = loadShaderCode(fragmentPath);
+    std::string vertexCode = loadShaderCode(vertexPath.c_str());
+    std::string fragmentCode = loadShaderCode(fragmentPath.c_str());
 
     // Convert to char array for OpenGL
     const char* vShaderCode = vertexCode.c_str();

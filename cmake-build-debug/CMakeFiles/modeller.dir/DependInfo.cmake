@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/levi/CLionProjects/modeller/calss/Camera.cpp" "CMakeFiles/modeller.dir/calss/Camera.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/Camera.cpp.o.d"
   "/home/levi/CLionProjects/modeller/calss/InputHandler.cpp" "CMakeFiles/modeller.dir/calss/InputHandler.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/InputHandler.cpp.o.d"
   "/home/levi/CLionProjects/modeller/calss/ObjLoader.cpp" "CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/ObjLoader.cpp.o.d"
+  "/home/levi/CLionProjects/modeller/calss/Object.cpp" "CMakeFiles/modeller.dir/calss/Object.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/Object.cpp.o.d"
   "/home/levi/CLionProjects/modeller/calss/Shader.cpp" "CMakeFiles/modeller.dir/calss/Shader.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/Shader.cpp.o.d"
   "/home/levi/CLionProjects/modeller/calss/Texture.cpp" "CMakeFiles/modeller.dir/calss/Texture.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/Texture.cpp.o.d"
   "/home/levi/CLionProjects/modeller/calss/Window.cpp" "CMakeFiles/modeller.dir/calss/Window.cpp.o" "gcc" "CMakeFiles/modeller.dir/calss/Window.cpp.o.d"
