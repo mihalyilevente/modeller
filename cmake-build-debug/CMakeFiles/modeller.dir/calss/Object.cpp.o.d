@@ -381,7 +381,9 @@ CMakeFiles/modeller.dir/calss/Object.cpp.o: \
  /usr/include/GL/gl.h \
  /home/levi/CLionProjects/modeller/calss/../external/STB/stb_image.h \
  /usr/include/c++/11/stdlib.h \
- /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/Window.h \
+ /home/levi/CLionProjects/modeller/calss/Camera.h \
  /home/levi/CLionProjects/modeller/calss/ObjLoader.h \
+ /home/levi/CLionProjects/modeller/calss/Buffer.h \
  /home/levi/CLionProjects/modeller/calss/Shader.h \
  /home/levi/CLionProjects/modeller/calss/Texture.h

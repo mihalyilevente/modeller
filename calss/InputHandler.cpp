@@ -34,7 +34,7 @@ void InputHandler::key_callback(GLFWwindow* window, int key, int scancode, int a
                 camera->ProcessKeyboard(Camera::DOWN, deltaTime);
                 break;
             case GLFW_KEY_J:
-                objectInFocus->moveVertically(1);
+                objectInFocus->rotate(45.0f, glm::vec3(1.0f, 0.0f, 0.0f));
                 break;
             default:
                 break;

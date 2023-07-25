@@ -1,7 +1,5 @@
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "calss/Window.h"
-#include "calss/Camera.h"
 #include "calss/InputHandler.h"
 #include "calss/Object.h"
 
@@ -33,12 +31,12 @@ static void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 
 int main() {
     try {
-        const std::string objFilePath = "/home/levi/CLionProjects/modeller/objects/cube.obj";
-        const std::string vertexShaderPath = "/home/levi/CLionProjects/modeller/shaders/default_vertex_shader.glsl";
-        const std::string fragmentShaderPath = "/home/levi/CLionProjects/modeller/shaders/default_fragment_shader.glsl";
+        const std::string objFilePath = "/home/levi/CLionProjects/modeller/objects/Gear.obj";
+        const std::string vertexShaderPath = "/home/levi/CLionProjects/modeller/shaders/vertex_shader.glsl";
+        const std::string fragmentShaderPath = "/home/levi/CLionProjects/modeller/shaders/fragment_shader.glsl";
         const std::string texturePath = "/home/levi/CLionProjects/modeller/textures/Gear_1_BaseColor.png";
 
-        Window window(windowWidth, windowHeight, "Hello World");
+        Window window(windowWidth, windowHeight, "Modeller");
         if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress)) {
             return -1;
         }
@@ -64,22 +62,9 @@ int main() {
             // Clear the screen
             glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-            // Use the shader program
-            object.getBuffer()->bind();
-            object.getShader()->use();
-            object.getTexture()->bind(0);
-
-            // Update the camera transformation
-            glm::mat4 view = camera.getViewMatrix();
-            float aspectRatio = window.getWidth() / (float) window.getHeight();
-            glm::mat4 projection = glm::perspective(glm::radians(camera.getFOV()), aspectRatio, 0.1f, 100.0f);
-            object.getShader()->setMat4("view", view);
-            object.getShader()->setMat4("projection", projection);
-
             // Draw the triangles
-            object.draw();
-            object.getTexture()->unbind(0);
-            object.getBuffer()->unbind();
+            object.draw(&window, &camera);
+
             window.swapBuffers();
         }
     }catch (const std::exception& e) {

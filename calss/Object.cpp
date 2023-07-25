@@ -10,6 +10,8 @@ Object::Object(const std::string &objFilePath, const std::string &vertexShaderPa
     buffer = new Buffer(vertices, texCoords, normals, faces);
     shader = new Shader(vertexShaderPath, fragmentShaderPath);
     texture = new Texture(texturePath);
+    model = glm::mat4(1.0f);
+
 }
 
 Buffer* Object::getBuffer() {
@@ -24,14 +26,41 @@ Texture *Object::getTexture() {
     return texture;
 }
 
-void Object::draw() {
+void Object::draw(Window* window, Camera* camera) {
+
+    //Bindings
+    buffer->bind();
+    shader->use();
+    texture->bind(0);
+
+    //bind Shader Params
+    float aspectRatio = window->getWidth() / (float) window->getHeight();
+    glm::mat4 view = camera->getViewMatrix();
+    glm::mat4 projection = glm::perspective(glm::radians(camera->getFOV()), aspectRatio, 0.1f, 100.0f);
+    shader->setMat4("view", view);
+    shader->setMat4("model",model);
+    shader->setMat4("projection", projection);
+
+    // Draw the triangles
+    drawTriangles();
+
+    //Unbindings
+    texture->unbind(0);
+    buffer->unbind();
+}
+void Object::drawTriangles() {
     glDrawElements(GL_TRIANGLES, faces.size() * 3, GL_UNSIGNED_INT, 0);
 }
 
-void Object::moveVertically(int n) { //does not work
-    for (int i = 0; i < vertices.size(); i++) {
-		vertices[i].x += n;
-		vertices[i].y += n;
-		vertices[i].z += n;
-    }
+
+void Object::translate(const glm::vec3& vec) {
+    model = glm::translate(model, vec);
+}
+
+void Object::rotate(float angle, const glm::vec3& axis) {
+    model = glm::rotate(model, glm::radians(angle), axis);
+}
+
+void Object::scale(const glm::vec3& vec) {
+    model = glm::scale(model, vec);
 }

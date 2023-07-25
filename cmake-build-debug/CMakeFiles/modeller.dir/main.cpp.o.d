@@ -1,6 +1,7 @@
 CMakeFiles/modeller.dir/main.cpp.o: \
  /home/levi/CLionProjects/modeller/main.cpp /usr/include/stdc-predef.h \
- /home/levi/CLionProjects/modeller/calss/Window.h \
+ /home/levi/CLionProjects/modeller/calss/InputHandler.h \
+ /home/levi/CLionProjects/modeller/calss/Camera.h \
  /home/levi/CLionProjects/modeller/calss/lib.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -384,12 +385,10 @@ CMakeFiles/modeller.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
- /home/levi/CLionProjects/modeller/calss/Camera.h \
- /home/levi/CLionProjects/modeller/calss/InputHandler.h \
- /home/levi/CLionProjects/modeller/calss/Camera.h \
  /home/levi/CLionProjects/modeller/calss/Object.h \
- /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/Window.h \
  /home/levi/CLionProjects/modeller/calss/ObjLoader.h \
+ /home/levi/CLionProjects/modeller/calss/Buffer.h \
  /home/levi/CLionProjects/modeller/calss/Shader.h \
  /home/levi/CLionProjects/modeller/calss/Texture.h \
  /home/levi/CLionProjects/modeller/calss/Object.h

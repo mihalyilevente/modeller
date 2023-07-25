@@ -383,7 +383,8 @@ CMakeFiles/modeller.dir/calss/InputHandler.cpp.o: \
  /home/levi/CLionProjects/modeller/calss/../external/STB/stb_image.h \
  /usr/include/c++/11/stdlib.h \
  /home/levi/CLionProjects/modeller/calss/Object.h \
- /home/levi/CLionProjects/modeller/calss/Buffer.h \
+ /home/levi/CLionProjects/modeller/calss/Window.h \
  /home/levi/CLionProjects/modeller/calss/ObjLoader.h \
+ /home/levi/CLionProjects/modeller/calss/Buffer.h \
  /home/levi/CLionProjects/modeller/calss/Shader.h \
  /home/levi/CLionProjects/modeller/calss/Texture.h

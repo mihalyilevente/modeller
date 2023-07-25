@@ -7,8 +7,10 @@
 
 
 #include "lib.h"
-#include "Buffer.h"
+#include "Window.h"
+#include "Camera.h"
 #include "ObjLoader.h"
+#include "Buffer.h"
 #include "Shader.h"
 #include "Texture.h"
 
@@ -16,13 +18,15 @@ class Object {
 public:
     Object(const std::string& objFilePath, const std::string& vertexShaderPath, const std::string& fragmentShaderPath, const std::string& texturePath);
 
-    void moveVertically(int n);
+    void draw(Window* window, Camera* camera);
 
-	Buffer* getBuffer();
+    void translate(const glm::vec3 &vec);
+    void rotate(float angle, const glm::vec3 &axis);
+    void scale(const glm::vec3 &vec);
+
+    Buffer* getBuffer();
     Shader* getShader();
     Texture* getTexture();
-
-    void draw();
 
 private:
     ObjLoader* objLoader;
@@ -35,6 +39,9 @@ private:
     std::vector<glm::ivec3> faces;
     std::vector<glm::ivec3> texIndices;
     std::vector<glm::ivec3> normIndices;
+    glm::mat4 model;
+
+    void drawTriangles();
 
 };
 
