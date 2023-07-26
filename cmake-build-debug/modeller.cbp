@@ -17,6 +17,56 @@
 					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ImGui">
+				<Option output="/home/levi/CLionProjects/modeller/cmake-build-debug/libImGui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/imgui"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImGui"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ImGui/fast">
+				<Option output="/home/levi/CLionProjects/modeller/cmake-build-debug/libImGui.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/imgui"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 ImGui/fast"/>
+					<CompileFile command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j6 -f &quot;/home/levi/CLionProjects/modeller/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="modeller">
 				<Option output="/home/levi/CLionProjects/modeller/cmake-build-debug/modeller" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/levi/CLionProjects/modeller/cmake-build-debug"/>
@@ -26,6 +76,7 @@
 				<Compiler>
 					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
 					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/imgui"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -50,6 +101,7 @@
 				<Compiler>
 					<Add directory="/home/levi/CLionProjects/modeller/external/GLAD/include"/>
 					<Add directory="/home/levi/CLionProjects/modeller/external/GLM"/>
+					<Add directory="/home/levi/CLionProjects/modeller/external/imgui"/>
 					<Add directory="/usr/include/c++/11"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
 					<Add directory="/usr/include/c++/11/backward"/>
@@ -142,6 +194,36 @@
 		</Unit>
 		<Unit filename="/home/levi/CLionProjects/modeller/external/STB/stb_image.h">
 			<Option target="modeller"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_glfw.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_glfw.h">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_opengl3.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_opengl3.h">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui.h">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui_demo.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui_draw.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui_tables.cpp">
+			<Option target="ImGui"/>
+		</Unit>
+		<Unit filename="/home/levi/CLionProjects/modeller/external/imgui/imgui_widgets.cpp">
+			<Option target="ImGui"/>
 		</Unit>
 		<Unit filename="/home/levi/CLionProjects/modeller/main.cpp">
 			<Option target="modeller"/>

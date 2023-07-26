@@ -27,6 +27,7 @@ public:
     Buffer* getBuffer();
     Shader* getShader();
     Texture* getTexture();
+    ~Object();
 
 private:
     ObjLoader* objLoader;

@@ -3890,8 +3890,16 @@ CMakeFiles/modeller.dir/main.cpp.o: /home/levi/CLionProjects/modeller/main.cpp \
   /home/levi/CLionProjects/modeller/calss/Buffer.h \
   /home/levi/CLionProjects/modeller/calss/Shader.h \
   /home/levi/CLionProjects/modeller/calss/Texture.h \
-  /home/levi/CLionProjects/modeller/calss/Object.h
+  /home/levi/CLionProjects/modeller/calss/Object.h \
+  /home/levi/CLionProjects/modeller/external/imgui/imgui.h \
+  /home/levi/CLionProjects/modeller/external/imgui/imconfig.h \
+  /home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_glfw.h \
+  /home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_opengl3.h
 
+
+/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_opengl3.h:
+
+/home/levi/CLionProjects/modeller/external/imgui/imgui.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h:
 
@@ -4315,6 +4323,8 @@ CMakeFiles/modeller.dir/main.cpp.o: /home/levi/CLionProjects/modeller/main.cpp \
 
 /usr/include/c++/11/bits/predefined_ops.h:
 
+/home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_glfw.h:
+
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/bits/stl_function.h:
@@ -4624,6 +4634,8 @@ CMakeFiles/modeller.dir/main.cpp.o: /home/levi/CLionProjects/modeller/main.cpp \
 /home/levi/CLionProjects/modeller/external/GLM/ext/quaternion_double_precision.hpp:
 
 /home/levi/CLionProjects/modeller/external/GLM/detail/compute_common.hpp:
+
+/home/levi/CLionProjects/modeller/external/imgui/imconfig.h:
 
 /usr/include/math.h:
 

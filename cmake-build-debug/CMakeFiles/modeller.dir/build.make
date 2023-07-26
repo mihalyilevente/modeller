@@ -236,6 +236,7 @@ modeller: CMakeFiles/modeller.dir/calss/InputHandler.cpp.o
 modeller: CMakeFiles/modeller.dir/calss/Texture.cpp.o
 modeller: CMakeFiles/modeller.dir/calss/Object.cpp.o
 modeller: CMakeFiles/modeller.dir/build.make
+modeller: libImGui.a
 modeller: CMakeFiles/modeller.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/levi/CLionProjects/modeller/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable modeller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/modeller.dir/link.txt --verbose=$(VERBOSE)

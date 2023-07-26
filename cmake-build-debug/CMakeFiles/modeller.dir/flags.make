@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM
+C_INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM -I/home/levi/CLionProjects/modeller/external/imgui
 
 C_FLAGS = -g -fdiagnostics-color=always
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM
+CXX_INCLUDES = -I/home/levi/CLionProjects/modeller/external/GLAD/include -I/home/levi/CLionProjects/modeller/external/GLM -I/home/levi/CLionProjects/modeller/external/imgui
 
 CXX_FLAGS = -g -fdiagnostics-color=always -std=gnu++14
 

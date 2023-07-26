@@ -391,4 +391,8 @@ CMakeFiles/modeller.dir/main.cpp.o: \
  /home/levi/CLionProjects/modeller/calss/Buffer.h \
  /home/levi/CLionProjects/modeller/calss/Shader.h \
  /home/levi/CLionProjects/modeller/calss/Texture.h \
- /home/levi/CLionProjects/modeller/calss/Object.h
+ /home/levi/CLionProjects/modeller/calss/Object.h \
+ /home/levi/CLionProjects/modeller/external/imgui/imgui.h \
+ /home/levi/CLionProjects/modeller/external/imgui/imconfig.h \
+ /home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_glfw.h \
+ /home/levi/CLionProjects/modeller/external/imgui/backends/imgui_impl_opengl3.h

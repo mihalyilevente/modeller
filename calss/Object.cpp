@@ -14,6 +14,14 @@ Object::Object(const std::string &objFilePath, const std::string &vertexShaderPa
 
 }
 
+Object::~Object() {
+    delete objLoader;
+    delete buffer;
+    delete shader;
+    delete texture;
+}
+
+
 Buffer* Object::getBuffer() {
     return buffer;
 }
