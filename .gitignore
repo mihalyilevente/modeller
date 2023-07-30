@@ -1,0 +1,9 @@
+# Ignore all build directories
+cmake-build*/
+
+# Ignore all files that have a .o or .a extension
+*.o
+*.a
+
+# Ignore all log files
+*.log
